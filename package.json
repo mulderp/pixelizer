@@ -1,0 +1,26 @@
+{
+  "name": "pixelizer",
+  "version": "0.0.1",
+  "description": "bundles pictures from a directory for easy browsing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pixelize": "bin/cmd.js"
+  },
+  "author": "Patrick Mulder",
+  "license": "MIT",
+  "dependencies": {
+    "concat-stream": "^1.4.6",
+    "findit": "^2.0.0",
+    "gm": "^1.17.0",
+    "hyperglue": "^1.3.3",
+    "marked": "^0.3.2",
+    "path": "^0.4.9",
+    "through": "^2.3.6",
+    "duplexer": "^0.1.1",
+    "trumpet": "^1.7.0",
+    "mkdirp": "^0.5.0"
+  }
+}
