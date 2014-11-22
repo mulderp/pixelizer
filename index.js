@@ -11,11 +11,12 @@ var mkdirp = require('mkdirp');
 var html = fs.readFileSync(__dirname + '/templates/index.html');
 
 var outdir = './static/';
-var resizeX = 80;
-var resizeY = 80;
 
 
-module.exports = function(outpath, prefix) {
+module.exports = function(outpath, prefix, options) {
+  
+  var resizeX = parseInt(options.size[0]);
+  var resizeY = parseInt(options.size[1]);
 
   // make directories for output
   mkdirp(outpath + '/' + prefix);
