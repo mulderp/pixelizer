@@ -8,6 +8,13 @@ if (!argv.size) {
   argv.size = '300x300';
 }
 
+var prefix;
+if (!argv.prefix) {
+  prefix = 'thumbs';
+} else {
+  prefix = argv.prefix;
+}
+
 var size = argv.size.split('x');
 
-p('./static', 'thumbs', {size: size});
+p('./static', prefix, {size: size});
